@@ -1,4 +1,6 @@
 #!/bash/bin
-TIME_STAMP=$(date)
-echo "the time is $TIME_STAMP"
-sleep 7
+TIME_START=$(date)
+echo "the starting time is $TIME_START"
+TIME_END=$(date)
+echo "the ending time is $TIME_END"
+
