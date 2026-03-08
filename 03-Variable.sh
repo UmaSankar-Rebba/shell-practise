@@ -1,3 +1,4 @@
 #!/bash/bin
-START_TIME=({date})
-echo "the data and time is $START_TIME"
+echo "please enter the username"
+read USER_NAME
+echo "Your username is $USER_NAME"
