@@ -1,7 +1,7 @@
 #!/bash/bin
 #Now i am printing using varaibles
-VAR_NAME1=Uma
-VAR_NAME2=Omkar
+VAR_NAME1=Radha 
+VAR_NAME2=Rao
 
 echo "$VAR_NAME1: Hi $VAR_NAME2! how are you?"
 echo "$VAR_NAME1:Hi $VAR_NAME1! I am fine.what about you?"
