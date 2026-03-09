@@ -11,3 +11,8 @@ else
  exit 1
 fi
 echo "Your user id is $USERID"
+
+if [ $? -eq 0 ];  then
+ echo "Nginx instllation is Success"
+else
+ echo "Nginx installation is Failed"
