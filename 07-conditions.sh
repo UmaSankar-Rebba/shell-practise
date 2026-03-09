@@ -6,4 +6,5 @@ if [ NUM gt 9]; then
  echo "Given num is TRUE"
 else
  echo "Given num is FALSE"
+ fi
  
