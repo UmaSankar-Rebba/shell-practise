@@ -1,5 +1,5 @@
 #!/bash/bin
-NUM="ENTER NUMBER"
+echo "enter the number"
 read=$NUM
 #here we are going to write some conditions
 #-gt means greater than
