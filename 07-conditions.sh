@@ -1,6 +1,6 @@
 #!/bash/bin
 echo "enter the number"
-read $NUM
+read NUM
 #here we are going to write some conditions
 #-gt means greater than
 # -lt means less than
