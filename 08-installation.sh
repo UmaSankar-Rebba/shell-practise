@@ -13,6 +13,7 @@ fi
 echo "Your user id is $USERID"
 
 if [ $? -eq 0 ];  then
- echo "Nginx instllation is Success"
+ echo "Nginx instllation is Success....!"
 else
- echo "Nginx installation is Failed"
+ echo "Nginx installation is Failed....!"
+fi
