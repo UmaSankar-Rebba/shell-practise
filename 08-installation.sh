@@ -1,6 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
+echo "Your user id is $USERID"
 
 if [ $USERID -eq 0 ]; then
  echo "Nginx is Installing....!"
