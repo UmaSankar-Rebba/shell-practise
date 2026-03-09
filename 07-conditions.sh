@@ -6,8 +6,10 @@ NUM=25
 # -eq means equal to
 #-ne means not equals to
 
-if [ $NUM -gt 9 ]; then
+if [ $NUM -gt 25 ]; then
  echo "Given num is Greater than $NUM"
+elif
+  echo "Given number is equals to $NUM"
 else
  echo "Given num is less than $NUM"
 fi
