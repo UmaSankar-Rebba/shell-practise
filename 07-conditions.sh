@@ -1,5 +1,6 @@
 #!/bash/bin
-NUM=25
+NUM="ENTER NUMBER"
+read=$NUM
 #here we are going to write some conditions
 #-gt means greater than
 # -lt means less than
