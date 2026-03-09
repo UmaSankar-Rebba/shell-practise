@@ -8,5 +8,5 @@ echo "the total sum is $SUM"
 Fruits=("apple" "banana" "kiwi")
 echo "i am having ${Fruits[@]}"
 echo "My morning fruit is ${Fruits[1]}"
-echo "My afternoon fruit is ${Fruit[0]}"
-echo "My evening snack fruit is ${Fruit[2]}"
+echo "My afternoon fruit is ${Fruits[0]}"
+echo "My evening snack fruit is ${Fruits[2]}"
