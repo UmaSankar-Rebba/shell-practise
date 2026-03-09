@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USERID=$(id -u)
-echo "Your user id is $USERID"
+
 
 if [ $USERID -eq 0 ]; then
  echo "Nginx is Installing....!"
@@ -9,3 +9,4 @@ if [ $USERID -eq 0 ]; then
 else
  echo "You don't have permission to exexute this operation"
 fi
+echo "Your user id is $USERID"
