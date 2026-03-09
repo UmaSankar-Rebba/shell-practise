@@ -7,10 +7,10 @@ read=$NUM
 # -eq means equal to
 #-ne means not equals to
 
-if [ $NUM -gt 25 ]; then
+if [ "$NUM"-gt 25 ]; then
  echo "Given num is Greater than $NUM"
-elif [ $NUM -eq 25 ]; then
-  echo "Given number is equals to $NUM"
+elif [ "$NUM" -eq 25 ]; then
+ echo "Given number is equals to $NUM"
 else
  echo "Given num is less than $NUM"
 fi
