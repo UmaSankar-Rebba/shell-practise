@@ -8,7 +8,7 @@ NUM=25
 
 if [ $NUM -gt 25 ]; then
  echo "Given num is Greater than $NUM"
-elif
+elif [ $NUM -eq 25 ]; then
   echo "Given number is equals to $NUM"
 else
  echo "Given num is less than $NUM"
