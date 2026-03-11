@@ -9,6 +9,10 @@ else
  echo "please provide the data to install"
  read SYSTEM
  dnf install $SYSTEM -y
- echo " $SYSTEM Installation is succes"
+  if [ $? -eq 0 ]; then
+   echo "$SYSTEM IS SUCCESS"
+  else 
+   echo "$SYSTEM IS FAILURE"
+  fi
 fi
 
