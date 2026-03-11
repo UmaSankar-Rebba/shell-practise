@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 
-if [$USERID -ne 0 ]; then
+if [ $USERID -ne 0 ]; then
  echo "You dont have permission do to this operation.contact sudo ADMIN"
  exit 1
 else
