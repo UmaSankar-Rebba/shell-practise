@@ -7,13 +7,14 @@ if [ $USERID -ne 0 ]; then
  exit 1
 fi
  
- VALIDATE (){
+ 
+VALIDATE (){
     if [ $1 -ne 0 ]; then
      echo " $2 is failure"
     else
      echo "$2 is Success"
  }
 
- dnf install nginx -y
- VALIDATE $? "Installaing nginx"
+dnf install nginx -y
+VALIDATE $? "Installaing nginx"
 
