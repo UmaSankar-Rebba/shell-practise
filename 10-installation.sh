@@ -10,9 +10,9 @@ else
  read SYSTEM
  dnf install $SYSTEM -y
   if [ $? -eq 0 ]; then
-   echo "$SYSTEM IS SUCCESS"
+   echo "$SYSTEM INSTALLATION IS SUCCESS"
   else 
-   echo "$SYSTEM IS FAILURE"
+   echo "$SYSTEM INSTALLATION IS FAILURE"
   fi
 fi
 
