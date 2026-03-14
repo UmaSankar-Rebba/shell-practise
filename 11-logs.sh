@@ -10,7 +10,7 @@ if [ $USERID -ne 0 ]; then
  echo "You dont have permission do to this operation.contact sudo ADMIN"
  exit 1
 else
- echo "please provide the data to install"
+ echo "please provide the data to install and"
  read SYSTEM
  dnf install $SYSTEM -y &>> $LOGS_FILE
   if [ $? -eq 0 ]; then
