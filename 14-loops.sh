@@ -3,9 +3,11 @@
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
+R="\e[31m"
+N="\e[0m"
 
 if [ $USERID -ne 0 ]; then
- echo "You dont have permission to do this task.Contact SUDO admin"
+ echo -e "$R You dont have permission to do this task $N.Contact SUDO admin"
  exit 1
 fi
  
