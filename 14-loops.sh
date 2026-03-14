@@ -26,5 +26,6 @@ VALIDATE(){
  else
   dnf install $PACKAGE -y | tee -a $LOGS_FILE
   VALIDATE $0 "$PACKAGE installing"
+fi
  done
 
