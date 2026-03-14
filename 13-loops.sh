@@ -1,6 +1,8 @@
 #!/bin/bash
 
 USERID=$(id -u)
+LOGS_FOLDER="/var/log/shell-script"
+LOGS_FILE="/var/log/shell-script/$0.log"
 
 if [ $USERID -ne 0 ]; then
  echo "You dont have permission to do this task.Contact SUDO admin"
@@ -17,7 +19,7 @@ VALIDATE(){
 }
  for PACKAGE in $@
  do
- dnf install $PACKAGE -y
+ dnf install $PACKAGE -y | tee -a $LOGS_FILE
 VALIDATE $0 "$PACKAGE installing"
  done
 
