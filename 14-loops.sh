@@ -24,8 +24,8 @@ VALIDATE(){
  if [ $EXIT -eq 0 ]; then
   echo "$PACKAGE Is already INSTALLED" | tee -a $LOGS_FILE
  else
-  dnf install $PACKAGE -y | tee -a $LOGS_FILE
-  VALIDATE $0 "$PACKAGE installing"
+  dnf install $PACKAGE -y
+  VALIDATE $? "$PACKAGE installing"
 fi
  done
 
