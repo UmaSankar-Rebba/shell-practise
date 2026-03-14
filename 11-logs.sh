@@ -4,6 +4,8 @@ USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
 LOGS_FILE="/var/log/shell-script/$0.log"
 
+mkdir -P $LOGS_FOLDER
+
 if [ $USERID -ne 0 ]; then
  echo "You dont have permission do to this operation.contact sudo ADMIN"
  exit 1
