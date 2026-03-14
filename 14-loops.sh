@@ -21,7 +21,7 @@ VALIDATE(){
  do
  dnf list installed $PACKAGE
  EXIT=($?)
- if [ $EXIT = 0]; then
+ if [ $EXIT -eq 0]; then
   echo "$PACKAGE Is already INSTALLED" | tee -a $LOGS_FILE
  else
   dnf install $PACKAGE -y | tee -a $LOGS_FILE
