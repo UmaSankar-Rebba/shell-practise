@@ -14,7 +14,7 @@ else
  read SYSTEM
  dnf install $SYSTEM -y &>> $LOGS_FILE
   if [ $? -eq 0 ]; then
-   echo "$SYSTEM INSTALLATION IS SUCCESS"
+   echo "$SYSTEM INSTALLATION IS SUCCESS" | tee -a $LOGS_FILE
   else 
    echo "$SYSTEM INSTALLATION IS FAILURE"
   fi
