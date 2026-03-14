@@ -19,7 +19,7 @@ VALIDATE(){
 }
  for PACKAGE in $@
  do
- dnf install $PACKAGE -y | tee -a $LOGS_FILE
-VALIDATE $0 "$PACKAGE installing"
+ dnf install $PACKAGE -y | tee -a
+VALIDATE $? "$PACKAGE installing"
  done
 
