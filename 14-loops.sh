@@ -19,7 +19,7 @@ VALIDATE(){
 }
  for PACKAGE in $@
  do
- dnf list installed $PACKAGE
+ dnf list installed $PACKAGE | &>> $LOGS_FILE
  EXIT=($?)
  if [ $EXIT -eq 0 ]; then
   echo "$PACKAGE Is already INSTALLED" | tee -a $LOGS_FILE
