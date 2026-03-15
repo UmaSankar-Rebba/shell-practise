@@ -1,0 +1,20 @@
+#!/bin/bash
+
+R="e[31m"
+B="e[30m"
+G="e[32m"
+Y="e[33m"
+B="e[34m"
+M="e[35m"
+C="e[36m"
+W="e[37m"
+N="e[0m"
+
+echo -e "$R this is Red color $N"
+echo -e "$B this is Blue color $N"
+echo -e "$G this is Grenn color $N"
+echo -e "$Y this is Yellow color $N"
+echo -e "$B this is Black color $N"
+echo -e "$M this is Magenta color $N"
+echo -e "$C this is Cyan color $N"
+echo -e "$W this is White color $N"

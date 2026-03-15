@@ -7,7 +7,7 @@ R="\e[31m"
 N="\e[0m"
 
 if [ $USERID -ne 0 ]; then
- echo -e "$R You dont have permission to do this task $N.Contact SUDO admin"
+ echo -e "$R You dont have permission to do this task $N    .Contact SUDO admin"
  exit 1
 fi
  
