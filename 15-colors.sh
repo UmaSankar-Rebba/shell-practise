@@ -1,7 +1,7 @@
 #!/bin/bash
 
 R="\e[31m"
-B="\e[30m"
+BL="\e[30m"
 G="\e[32m"
 Y="\e[33m"
 B="\e[34m"
@@ -11,7 +11,7 @@ W="\e[37m"
 N="\e[0m"
 
 echo -e "$R this is Red color $N"
-echo -e "$B this is Blue color $N"
+echo -e "$BL this is Blue color $N"
 echo -e "$G this is Grenn color $N"
 echo -e "$Y this is Yellow color $N"
 echo -e "$B this is Black color $N"
